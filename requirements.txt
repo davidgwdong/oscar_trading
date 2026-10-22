@@ -1,0 +1,5 @@
+# ===================================
+# Oscar Trading - dependencies
+# ===================================
+yfinance>=0.2.0             # Priority 4: Yahoo Finance (Fallback)
+pandas>=2.0.0               # Data analysis
