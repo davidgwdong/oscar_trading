@@ -50,11 +50,12 @@ if __name__ == "__main__":
     available_dates = yf_ticker.options
 
     if available_dates:
-        print(f"Available Expiration Dates for {ticker}: {available_dates[:5]}...")
+        print(f"Available Expiration Dates for {ticker}: {available_dates}...")
 
         # Step 2: Fetch data for the nearest expiration date
         # You can replace None with a specific string from available_dates, e.g., '2026-11-20'
-        calls, puts = get_options_data(ticker, expiration_date=None)
+        #calls, puts = get_options_data(ticker, expiration_date=None)
+        calls, puts = get_options_data(ticker, '2026-10-26')
 
         if calls is not None and not calls.empty:
             # Display the first few rows of the Calls DataFrame
